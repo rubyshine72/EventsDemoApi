@@ -1,7 +1,7 @@
 
 # Events API Demo
 
-A minified version of the Events module API based on wireframes. The API should provide endpoints for events CRUD
+A minified version of the Events API.
 
 ## Database
 
