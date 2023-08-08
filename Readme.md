@@ -65,10 +65,67 @@ The demo API has 5 API endpoints for now.
 The swagger has details about the API endpoints. 
 [Swagger UI](http://localhost:5225/swagger/index.html)
 
+
+![API Screenshot](https://i.ibb.co/MfZmnJc/API.png)
+
+
 - List API [GET] `/api/events`
+
 This api will returns events list. This endpoint has 2 query parameters (start, rows).
+
 Start parameter is offset of event list while the rows is count of events that will retrieve.
 
 ![API Screenshot](https://i.ibb.co/8dFZBGg/list.png)
+
+
+
+
+- Get an event item API [GET] `/api/events/{id}`
+
+This api will returns a event data.
+
+This API returns 404 error if event (by id) is not existing.
+
+![API Screenshot](https://i.ibb.co/5cxbJdn/get-item.png)
+
+
+- Create event API [POST] `/api/events`
+
+This api will create an event.
+
+This API returns 500 error if data (timezoneId, participants, etc) is not correct.
+
+![API Screenshot](https://i.ibb.co/1LK9d1h/create.png)
+
+
+
+- Update event API [PUT] `/api/events/{id}`
+
+This api will update existing event.
+
+This API returns 404 error if event (by id) is not existing and also returns 500 error if data (timezoneId, participants, etc) is not correct.
+
+![API Screenshot](https://i.ibb.co/nf38qFK/update.png)
+
+
+- Delete event API [DELETE] `/api/events/{id}`
+
+This api will update existing event.
+
+This API returns 404 error if event (by id) is not existing.
+
+![API Screenshot](https://i.ibb.co/JtpqD35/delete.png)
+
+
+- Confirm invitation API [GET] `/api/Events/invite-confirm/{id}/{userId}`
+
+This api will update confirmation status of invitation for participants.
+
+![API Screenshot](https://i.ibb.co/fkrpFv9/confirm.png)
+
+
+
+
+
 
 
